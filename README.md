@@ -13,3 +13,5 @@ This research highlights the potential of CNN-AEs with DMF in fluid dynamics, wh
 1. Install dependencies: `conda creat -f conda-environment.yaml`
 2. Run training script in created env: `python main.py --model MLP \ --lr 0.0001 \ --epochs 100 \ --batch_size 25 \ --latent_dim 5 \ --ranger21 True \ --lr_patience 10 \ --stop_patience 20 \ --deep_matrix True \ --deepth 8 \ --vae False \ --cycle 10 \ --vae_bn 0 \ --name MLPDM_latent5 \ --wandb False \ --notes test \ --tags None \ --model_dir [Your Path] `
 3. This is a example command line. Using `python main.py -help` for more information.
+
+> The data is too large for github repo. Get it by access https://drive.google.com/file/d/11Nx7s_79e8DLup6XjpQGVpVZu3G6ng-2/view?usp=sharing
