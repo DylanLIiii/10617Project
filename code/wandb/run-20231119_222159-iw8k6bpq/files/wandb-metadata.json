@@ -1,0 +1,201 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-11-20T03:21:59.850219",
+    "startedAt": "2023-11-20T03:21:59.241616",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "dylanli3090",
+    "username": "dylan",
+    "executable": "/home/dylan/mambaforge/envs/aiml/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2762.8437499999995,
+        "min": 2200.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3400.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2874.575,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3400.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3730.904,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2870.125,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2874.633,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2872.544,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3593.109,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3591.972,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3591.928,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3586.667,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3629.321,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3597.853,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3400.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2872.221,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 467.8895797729492,
+            "used": 87.83616638183594
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 62.707889556884766
+    }
+}

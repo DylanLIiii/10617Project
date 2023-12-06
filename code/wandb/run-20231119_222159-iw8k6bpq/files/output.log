@@ -1,0 +1,86 @@
+[32mLoad model successfully! Using model: CNN
+[32mModel architecture: 
+CNNAutoEncoder(
+  (encoder): CNNEncoderBlock(
+    (activation): Tanh()
+    (conv): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(1, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): Tanh()
+        (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (1): Sequential(
+        (0): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): Tanh()
+        (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (2-3): 2 x Sequential(
+        (0): Conv2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): Tanh()
+        (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (4): Sequential(
+        (0): Conv2d(8, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): Tanh()
+        (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (5): Sequential(
+        (0): Conv2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): Tanh()
+        (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+    )
+    (latent_mlp): Linear(in_features=84, out_features=2, bias=True)
+  )
+  (decoder): CNNDecoderBlock(
+    (activation): Tanh()
+    (conv): ModuleList(
+      (0): Sequential(
+        (0): Tanh()
+        (1): ConvTranspose2d(4, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (1): Sequential(
+        (0): Tanh()
+        (1): ConvTranspose2d(4, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (2-3): 2 x Sequential(
+        (0): Tanh()
+        (1): ConvTranspose2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (4): Sequential(
+        (0): Tanh()
+        (1): ConvTranspose2d(8, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+      (5): Sequential(
+        (0): Tanh()
+        (1): ConvTranspose2d(16, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+    (latent_mlp): Linear(in_features=1, out_features=84, bias=True)
+  )
+)
+[32mCreate dataset successfully! Train dataset size: 200, Test dataset size: 50
+[32mCreate dataloader successfully! Train dataloader size: 2, Test dataloader size: 1
+2023-11-19 22:22:04,344 :: INFO :: Start training model CNN using device cuda
+[32mEpoch 0 | Training[39m: 0it [00:00, ?it/s]
+[32mEpoch 0 | Training loss: 0.16650062799453735
+[32mEpoch 0 | Training[39m: 2it [00:02,  1.34s/it]
+[34mEpoch 0 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00,  4.02it/s]
+[32mEpoch 1 | Training[39m: 2it [00:00,  9.70it/s]
+[34mEpoch 1 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 43.25it/s]
+[32mEpoch 2 | Training[39m: 2it [00:00, 10.04it/s]
+[34mEpoch 2 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 46.48it/s]
+[32mEpoch 3 | Training[39m: 2it [00:00, 10.00it/s]
+[34mEpoch 3 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 46.07it/s]
+[32mEpoch 4 | Training[39m: 2it [00:00,  9.99it/s]
+[34mEpoch 4 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 45.87it/s]
+[32mEpoch 5 | Training[39m: 2it [00:00, 10.06it/s]
+[34mEpoch 5 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 46.03it/s]
+[32mEpoch 6 | Training[39m: 2it [00:00,  9.59it/s]
+[34mEpoch 6 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 45.99it/s]
+[32mEpoch 7 | Training[39m: 2it [00:00, 10.08it/s]
+[34mEpoch 7 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 46.23it/s]
+[32mEpoch 8 | Training[39m: 2it [00:00, 10.05it/s]
+[34mEpoch 8 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 44.82it/s]
+[32mEpoch 9 | Training[39m: 2it [00:00,  7.22it/s]
+[34mEpoch 9 | Validation[39m: 100%|██████████| 1/1 [00:00<00:00, 45.04it/s]
